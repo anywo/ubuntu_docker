@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  os:
+    build:
+      context: .
+      network: host
+    network_mode: host
+    tty: true
+    volumes:
+      - /home:/home
+    entrypoint:
+      - "bash"
